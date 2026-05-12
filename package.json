@@ -1,0 +1,17 @@
+{
+  "name": "cse341-node",
+  "version": "1.0.0",
+  "description": "CSE341 Node/MongoDB Project",
+  "license": "ISC",
+  "author": "Uriyah Sam",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.2.0"
+  }
+}
