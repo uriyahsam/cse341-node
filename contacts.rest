@@ -1,0 +1,68 @@
+### =============================================
+### CSE341 - Contacts API REST Tests
+### Replace BASE_URL with your Render URL for
+### production testing, or use localhost for local
+### =============================================
+
+@BASE_URL = http://localhost:3000
+### For production, use:
+### @BASE_URL = https://your-app-name.onrender.com
+
+### =============================================
+### 1. GET ALL CONTACTS
+### =============================================
+GET {{BASE_URL}}/contacts
+Content-Type: application/json
+
+###
+
+### =============================================
+### 2. GET SINGLE CONTACT BY ID
+### Replace the id below with a real _id from MongoDB
+### =============================================
+GET {{BASE_URL}}/contacts/6a080ac250ca643bec8433b2
+Content-Type: application/json
+
+###
+
+### =============================================
+### 3. CREATE A NEW CONTACT (POST)
+### =============================================
+POST {{BASE_URL}}/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Nana",
+  "lastName": "Adjei",
+  "email": "nana.adjei@example.com",
+  "favoriteColor": "orange",
+  "birthday": "1997-06-18"
+}
+
+###
+
+### =============================================
+### 4. UPDATE A CONTACT (PUT)
+### Replace the id below with a real _id from MongoDB
+### =============================================
+PUT {{BASE_URL}}/contacts/6a080ac250ca643bec8433b2
+Content-Type: application/json
+
+{
+  "firstName": "Nana",
+  "lastName": "Adjei",
+  "email": "nana.updated@example.com",
+  "favoriteColor": "teal",
+  "birthday": "1997-06-18"
+}
+
+###
+
+### =============================================
+### 5. DELETE A CONTACT
+### Replace the id below with a real _id from MongoDB
+### =============================================
+DELETE {{BASE_URL}}/contacts/6a080ac250ca643bec8433b2
+Content-Type: application/json
+
+###
